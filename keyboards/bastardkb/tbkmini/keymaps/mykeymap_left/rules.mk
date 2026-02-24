@@ -1,3 +1,3 @@
 VIA_ENABLE = yes
-
 SPLIT_KEYBOARD = yes
+SERIAL_DRIVER = vendor
