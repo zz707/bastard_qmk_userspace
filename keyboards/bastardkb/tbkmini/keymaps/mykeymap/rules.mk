@@ -1,3 +1,4 @@
 VIA_ENABLE = yes
 SPLIT_KEYBOARD = yes
 SERIAL_DRIVER = vendor
+CONVERT_TO = rp2040_ce
