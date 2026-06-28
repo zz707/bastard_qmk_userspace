@@ -1,8 +1,12 @@
 #pragma once
-#define SPLIT_USB_DETECT
-#ifdef SPLIT_SIDE_LEFT
-    #define MASTER_LEFT
-#endif
-#ifdef SPLIT_SIDE_RIGHT
-    #define MASTER_RIGHT
-#endif
+
+// Serial communication pin (BastardKB standard for promicro/Elite-C holder)
+#define SOFT_SERIAL_PIN GP1
+
+// Force PIO-based serial driver instead of bitbang
+// This avoids potential CPU bitbang timing issues on RP2040 clones
+#define SERIAL_PIO_USE_PIO0
+
+// Increase serial communication reliability margins
+#define SPLIT_MAX_CONNECTION_ERRORS 10
+#define SPLIT_CONNECTION_CHECK_TIMEOUT 1000

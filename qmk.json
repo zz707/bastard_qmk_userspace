@@ -3,13 +3,7 @@
     "build_targets": [
         {
             "keyboard": "bastardkb/tbkmini",
-            "keymap": "mykeymap",
-            "env": ["SPLIT_SIDE=left"]
-        },
-        {
-            "keyboard": "bastardkb/tbkmini",
-            "keymap": "mykeymap",
-            "env": ["SPLIT_SIDE=right"]
+            "keymap": "mykeymap"
         }
     ]
 }
